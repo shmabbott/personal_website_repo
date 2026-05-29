@@ -47,7 +47,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       {/* This is where the magic happens. PortableText loops over the JSON blocks and spits out clean HTML */}
       <div className="prose max-w-none">
         {post.content ? ( <PortableText value={post.content} /> ) : (
-          <p className="text-gray-400 italic">This post has no content yet..............</p>
+          <p className="text-gray-400 italic">This post has no content yet.....</p>
         )}
       </div>
     </main>
